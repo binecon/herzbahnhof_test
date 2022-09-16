@@ -1,10 +1,12 @@
 import React from "react";
 
-const Contact = () => {
-  return (
-    <div className="center">
-      <h2>Contact Page</h2>
-    </div>
-  );
+const IdeaForm = () => {
+	return (
+		<div className="center">
+			<div className="blackbox">
+				<h2>Form for ideas</h2>
+			</div>
+		</div>
+	);
 };
-export default Contact;
+export default IdeaForm;

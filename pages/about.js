@@ -1,11 +1,13 @@
 import React from "react";
 
-const About = () => {
-  return (
-    <div className="center">
-      <h2>About Page</h2>
-    </div>
-  );
+const SummerText = () => {
+	return (
+		<div className="center">
+			<div className="blackbox">
+				<h2>SoP</h2>
+			</div>
+		</div>
+	);
 };
 
-export default About;
+export default SummerText;

@@ -1,9 +1,14 @@
-import Navbar from "../components/Navbar";
+import BackgroundImage from "../components/BackgroundImage";
 
-export default function Home() {
-  return (
-    <div className="center">
-      <h2>Home Page</h2>
-    </div>
-  );
+export default function Home({ Component, pageProps }) {
+	return (
+		<>
+			<BackgroundImage />
+			<div className="center">
+				<div className="whitebox">
+					<h2>Home Page</h2>
+				</div>
+			</div>
+		</>
+	);
 }
