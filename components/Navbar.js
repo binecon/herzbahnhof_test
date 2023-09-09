@@ -3,11 +3,14 @@ import Image from "next/image";
 import React, { useState } from "react";
 import NavItem from "./NavItem";
 
+//have a homebtn to return to homepage
+
 const MENU_LIST = [
-	{ text: "Rückblick", href: "/" },
-	{ text: "Aktuell", href: "/about" },
-	{ text: "Perspektiven", href: "/contact" },
+	// { text: "Home", href: "/" },
+	{ text: "Geschichte", href: "/westbahnhof" },
+	{ text: "Perspektiven", href: "/perspektiven" },
 ];
+
 const Navbar = () => {
 	const [navActive, setNavActive] = useState(null);
 	const [activeIdx, setActiveIdx] = useState(-1);

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
 /* http://fonts.cdnfonts.com/css/sansation */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -17,8 +21,11 @@ header {
 	z-index: 30;
 	top: 0;
 }
+.h2 {
+	font-weight: bold;
+}
 .bg {
-	z-index: -1;
+	z-index: -2;
 }
 
 .headbox {
@@ -27,14 +34,8 @@ header {
 	z-index: 1;
 }
 
-/* logo {
-	border: 3px solid #cccccc;
-} */
-
 .logoHeart {
 	margin-top: 2%;
-	/* background-color: red;
-	border: 3px solid #cccccc; */
 	width: 50px;
 	height: 50px;
 	z-index: 1;
@@ -82,7 +83,7 @@ nav {
 }
 
 .nav__link {
-	font-size: 18px;
+	font-size: 20px;
 	position: relative;
 	transition: all 0.2s;
 	padding-right: 2em;
@@ -123,23 +124,6 @@ nav {
 	font-weight: bold;
 }
 
-/* in the main section, below navbar */
-.center {
-	min-height: 515px;
-	margin-top: 3em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.whitebox {
-	color: white;
-	z-index: 0;
-}
-.blackbox {
-	color: black;
-	z-index: 0;
-}
-
 @media screen and (min-width: 768px) {
 	.nav__menu-bar {
 		display: none;
@@ -170,11 +154,89 @@ nav {
 	} */
 }
 
-.footer {
+/* main and footer section, below navbar */
+.center {
 	display: flex;
 	justify-content: center;
+	padding-bottom: 3em;
+}
+.center {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 6em;
+	padding-top: 6em;
+}
+.exyellowbox {
+	background-color: rgb(255, 255, 0, 0.65);
+	color: #1e3a8a;
+	font-size: x-large;
+	font-weight: 600;
+	text-align: center;
+	padding: 0.9em;
+	z-index: 1;
+	border: solid 3px #1e3a8a;
+	width: 500px;
+	height: 320px;
+	border-radius: 5px;
+	margin-bottom: 1em;
+}
+
+.ideabox {
+	padding: 1em;
+}
+.textarea {
+	padding: 0.8em;
+	width: 300px;
+	font-size: large;
+	border-radius: 5px;
+	margin-bottom: 0.8em;
+}
+.sendbutton {
+	padding: 0.8em;
+	background-color: FFFF00;
+	color: #1e3a8a;
+	font-weight: 600;
+	font-size: large;
+	border-radius: 5px;
+	border-color: #1e3a8a;	
+}
+.sendbutton:hover {
+	cursor: pointer;
+}
+
+/** images **/
+
+.thankyou_heart {
+	width: 12em;
+	height: 12em;
+	margin-left:3em;
+}
+.lamp_ideas {
+	width: 12em;
+	height: 12em;
+	margin-left:3em;
+}
+.bahnhof_history {
+	width: 800px;
+	height: 500px;
+}
+paragraph{
+ text-align: center;
+}
+
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-evenly;
 	border-top: 3px solid black;
 	background-color: #ffd7d7;
-	height: 20em;
 	padding-top: 3em;
+	padding-bottom: 2em;
+}
+
+footer {
+	position: sticky;
+	z-index: 30;
 }

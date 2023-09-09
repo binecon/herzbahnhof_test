@@ -3,9 +3,10 @@ import React from "react";
 const LogoHeart = () => {
 	return (
 		<div className="headbox">
-			{/* <img classname="logoHeart" src="/Group 43.jpg" alt="HBhf" /> */}
 			<div className="logoHeart">
-				<img classname="logoHeart" src="/Group 44.png" alt="HBhf" />{" "}
+				<a href="/">
+					<img classname="logoHeart" src="/Group 44.png" alt="HBhf" />{" "}
+				</a>
 			</div>
 		</div>
 	);

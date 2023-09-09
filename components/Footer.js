@@ -4,8 +4,15 @@ const Footer = () => {
 	const year = new Date().getFullYear();
 	return (
 		<footer className="footer">
-			<p className="footerBar">contact info</p>
-			<p>{`Copyright © gare du cœur ${year}`}</p>
+			<div className="footerBar">
+				<p>
+					<a className="text-decoration: underline" href="/kontakt">
+						Kontakt & Impressum
+					</a>
+				</p>
+				<br />
+				<p>{`Copyright © GareDuCœur ${year}`}</p>
+			</div>
 		</footer>
 	);
 };

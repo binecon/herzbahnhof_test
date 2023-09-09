@@ -1,0 +1,24 @@
+/* similar to .main */
+/* .container {
+	display: flex;
+	flex-direction: column;
+	background-color: red;
+} */
+
+/* does nothing */
+/* .header {
+	background-color: yellow;
+	width: 100%;
+} */
+
+/* top and main full width */
+/* .main {
+	background-color: yellow;
+	display: flex;
+	justify-content: center;
+} */
+
+.backToHome {
+	margin-left: 20rem;
+	color: blue;
+}

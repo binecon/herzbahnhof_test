@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const BackgroundImage = (pageProps) => {
 	return (
-		<div className="bg">
+		<div className="bg mb-14">
 			<Image
 				src={"/herzberg_westbhf.jpeg"}
 				alt="Westbahnhof"
@@ -12,6 +12,7 @@ const BackgroundImage = (pageProps) => {
 				// 33vw"
 				layout="fill"
 			/>
+			<br />
 		</div>
 	);
 };
